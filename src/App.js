@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Header from "./components/Header";
 import CharacterGrid from "./components/CharacterGrid";
-
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [items, setItems] = useState([])
@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="container">
      <Header />
+     <SearchBar />
      <CharacterGrid loading={isLoading} item={items}/>
     </div>
   );
