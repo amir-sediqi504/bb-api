@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     const fetchItems = async () =>{
-      const result = await axios(`https://www.breakingbadapi.com/api/quotes/1`)
+      const result = await axios(`https://www.breakingbadapi.com/api/characters`)
 
       console.log(result.data);
       setItems(result.data) 
