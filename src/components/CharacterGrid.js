@@ -1,10 +1,11 @@
 import React from 'react'
 import CharacterItem from './CharacterItem'
+import Spinner from './Spinner'
 
 const CharacterGrid = ({item, loading}) => {
   
 
-  return loading ? <h1></h1> : <section className='cards'> 
+  return loading ? <Spinner /> : <section className='cards'> 
         {item.map(itemm => (
             <CharacterItem key={itemm.char_id} itemm={itemm}></CharacterItem>
         ))}
